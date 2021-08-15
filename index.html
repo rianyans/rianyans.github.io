@@ -19,8 +19,17 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
-    <!-- Jquery -->
+     <div class="container" style="margin-top: 10px;text-align:center;">
+            <div class="row">
+                <button class="btn btn-warning" onclick="notifikasi()">
+                    Klik Disini
+                </button>
+            </div>
+        </div>
+         
+        <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+         
         <!-- Notifikasi Script -->
         <script>
             $(document).ready(function() {
@@ -36,10 +45,13 @@
                 if (Notification.permission !== "granted")
                     Notification.requestPermission();
                 else {
-                    var notifikasi = new Notification('Hai gimana kabarnya??', {
-                        icon: 'https://images.app.goo.gl/zSfbGD4BxrUTJwJD8.gif',
-                        body: "STAY SAFE TERUS YAA !",
+                    var notifikasi = new Notification('Hai Gimana Kabarnya?', {
+                        icon: 'https://images.app.goo.gl/tkmnATsiRW8vbJSy7.gif',
+                        body: "STAY SAFE TERUS YA !",
                     });
+                    notifikasi.onclick = function () {
+                        window.open("http://goo.gl/dIf4s1");      
+                    };
                     setTimeout(function(){
                         notifikasi.close();
                     }, 5000);
