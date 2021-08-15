@@ -19,6 +19,33 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+    <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Notifikasi Script -->
+        <script>
+            $(document).ready(function() {
+                  if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+            });
+             
+            function notifikasi() {
+                if (!Notification) {
+                    alert('Browsermu tidak mendukung Web Notification.'); 
+                    return;
+                }
+                if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+                else {
+                    var notifikasi = new Notification('Hai gimana kabarnya??', {
+                        icon: 'https://images.app.goo.gl/zSfbGD4BxrUTJwJD8.gif',
+                        body: "STAY SAFE TERUS YAA !",
+                    });
+                    setTimeout(function(){
+                        notifikasi.close();
+                    }, 5000);
+                }
+            };
+        </script>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
