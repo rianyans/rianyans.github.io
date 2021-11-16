@@ -102,3 +102,28 @@ function fadeIn(el, display) {
         }
     })();
 };
+function pass()
+    {
+    var coba = 1;
+     do
+      {
+       p = prompt("Tuliskan password dengan benar","");
+       if (p=="91827412414")
+        {
+          alert("Gila jago bat");
+          window.open("../ulangtahun.html");
+          break;
+        }
+       else
+        {
+          alert("Password Salah !!! Ulangi lagi.");
+        }
+       if (coba==3)
+        {
+          alert("maaf, kesempatan anda hanya 3 kali");
+         history.go(-1);
+        }
+      coba=coba+1;
+      }
+     while (coba<=3)
+    }             
