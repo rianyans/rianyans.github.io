@@ -108,10 +108,10 @@ function pass()
      do
       {
        p = prompt("Tuliskan password dengan benar","");
-       if (p=="91827412414")
+       if (p=="tiara")
         {
           alert("Gila jago bat");
-          window.open("../ulangtahun.html");
+          window.open("../Random.html");
           break;
         }
        else
