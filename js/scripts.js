@@ -107,7 +107,7 @@ function pass()
     var coba = 1;
      do
       {
-       p = prompt("Tuliskan password dengan benar","");
+       p = prompt("Nama lo siapa?","");
        if (p=="tiara")
         {
           alert("Gila jago bat");
