@@ -108,7 +108,7 @@ function pass()
      do
       {
        p = prompt("Nama lo siapa?","");
-       if (p=="tiara")
+       if (p=="awikwokshwjwjspisan")
         {
           alert("Gila jago bat");
           window.open("../Random.html");
